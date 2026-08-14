@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "results": {
+    "M_adaptive": {
+      "benign": 0.9746756331091723,
+      "asr": 0.9347715736040609,
+      "scale_factor": 5.0
+    },
+    "O_adaptive": {
+      "benign": 0.96297592560186,
+      "asr": 0.005076142131979695,
+      "scale_factor": 5.0
+    }
+  }
+}

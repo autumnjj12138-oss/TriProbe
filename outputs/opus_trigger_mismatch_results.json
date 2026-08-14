@@ -1,0 +1,86 @@
+{
+  "seed": 42,
+  "attacker_features": [
+    "Bwd Packet Length Std",
+    "Bwd Packet Length Max",
+    "Bwd Packet Length Mean",
+    "Avg Bwd Segment Size",
+    "Packet Length Std",
+    "Fwd IAT Std",
+    "Flow IAT Max",
+    "Fwd IAT Max",
+    "Flow IAT Std",
+    "Fwd IAT Total"
+  ],
+  "results": {
+    "probe_full": {
+      "n_probe_features": 10,
+      "overlap_with_attacker": 10,
+      "overlap_pct": 1.0,
+      "probe_features": [
+        "Bwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Mean",
+        "Avg Bwd Segment Size",
+        "Packet Length Std",
+        "Fwd IAT Std",
+        "Flow IAT Max",
+        "Fwd IAT Max",
+        "Flow IAT Std",
+        "Fwd IAT Total"
+      ],
+      "benign": 0.9599260018499538,
+      "asr": 0.007106598984771574
+    },
+    "probe_partial_8": {
+      "n_probe_features": 8,
+      "overlap_with_attacker": 8,
+      "overlap_pct": 0.8,
+      "probe_features": [
+        "Bwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Mean",
+        "Avg Bwd Segment Size",
+        "Packet Length Std",
+        "Fwd IAT Std",
+        "Flow IAT Max",
+        "Fwd IAT Max"
+      ],
+      "benign": 0.9614009649758756,
+      "asr": 0.015228426395939087
+    },
+    "probe_partial_5": {
+      "n_probe_features": 5,
+      "overlap_with_attacker": 5,
+      "overlap_pct": 0.5,
+      "probe_features": [
+        "Bwd Packet Length Std",
+        "Bwd Packet Length Max",
+        "Bwd Packet Length Mean",
+        "Avg Bwd Segment Size",
+        "Packet Length Std"
+      ],
+      "benign": 0.9606759831004225,
+      "asr": 0.007868020304568528
+    },
+    "probe_disjoint": {
+      "n_probe_features": 10,
+      "overlap_with_attacker": 0,
+      "overlap_pct": 0.0,
+      "probe_features": [
+        "Packet Length Variance",
+        "Max Packet Length",
+        "Packet Length Mean",
+        "Average Packet Size",
+        "Min Packet Length",
+        "Flow Duration",
+        "Flow IAT Mean",
+        "Bwd IAT Std",
+        "Fwd IAT Mean",
+        "Bwd IAT Max"
+      ],
+      "benign": 0.957976050598735,
+      "asr": 0.016370558375634517
+    }
+  }
+}

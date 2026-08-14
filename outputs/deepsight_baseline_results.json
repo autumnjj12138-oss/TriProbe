@@ -1,0 +1,8 @@
+{
+  "seed": 42,
+  "defense": "DeepSight",
+  "category": "activation/behavior detection",
+  "benign": 0.9745256368590786,
+  "asr": 0.6515228426395939,
+  "minutes": 18.338748868306478
+}

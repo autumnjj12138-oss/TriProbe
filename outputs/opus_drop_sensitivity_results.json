@@ -1,0 +1,41 @@
+{
+  "seed": 42,
+  "results": {
+    "0.15": {
+      "drop_quantile": 0.15,
+      "n_dropped_per_round": 3,
+      "benign": 0.9282017949551261,
+      "asr": 0.03756345177664975
+    },
+    "0.20": {
+      "drop_quantile": 0.2,
+      "n_dropped_per_round": 4,
+      "benign": 0.95897602559936,
+      "asr": 0.025888324873096447
+    },
+    "0.25": {
+      "drop_quantile": 0.25,
+      "n_dropped_per_round": 5,
+      "benign": 0.96017599560011,
+      "asr": 0.025380710659898477
+    },
+    "0.30": {
+      "drop_quantile": 0.3,
+      "n_dropped_per_round": 6,
+      "benign": 0.9610509737256568,
+      "asr": 0.009137055837563452
+    },
+    "0.35": {
+      "drop_quantile": 0.35,
+      "n_dropped_per_round": 7,
+      "benign": 0.9599260018499538,
+      "asr": 0.007106598984771574
+    },
+    "0.40": {
+      "drop_quantile": 0.4,
+      "n_dropped_per_round": 8,
+      "benign": 0.9583260418489538,
+      "asr": 0.0013959390862944162
+    }
+  }
+}
