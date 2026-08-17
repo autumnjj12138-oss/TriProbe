@@ -53,12 +53,24 @@ already there, so an interrupted sweep can simply be restarted.
 
 | Paper item | Command |
 | --- | --- |
-| Table 3, Fig. 3 (baseline comparison) | `python scripts/run_baselines.py` |
-| SHIELD-FL baseline row | `python scripts/run_shieldfl_baseline.py` |
-| Table 6 (mechanism ablation) | `python scripts/run_ablation.py` |
-| Fig. 3 (baseline comparison) | `python scripts/make_figure3.py` |
-| Figs. 4, 8, 9 | `python scripts/make_figures_main.py` |
-| Figs. 5, 6, 7 | `python scripts/make_figures_supp.py` |
+| Table 3, Fig. 3 — baseline comparison | `python scripts/run_baselines.py` |
+| Table 3, Fig. 3 — SHIELD-FL baseline row | `python scripts/run_shieldfl_baseline.py` |
+| Table 3 — detection metrics of the baselines | `python scripts/run_baseline_security_metrics.py` |
+| Table 4 — detection metrics of FedAvg and TriProbe | `python scripts/run_security_metrics.py` |
+| Table 6 — mechanism ablation | `python scripts/run_ablation.py` |
+| Table 7 — update-scaling stress test | `python scripts/run_update_scaling.py` |
+| Fig. 4, Fig. 8 — trigger types and Non-IID sweep | `python scripts/run_single_subspace_and_noniid.py` |
+| Fig. 8 — Non-IID controls (no defense, benign-probe ASF) | `python scripts/run_noniid_controls.py` |
+| Section 5.3.4 — probe-base ablation | `python scripts/run_probe_base_ablation.py` |
+| Section 6 — probe-aware adaptive attacker | `python scripts/run_probe_aware_evasion.py` |
+| Fig. 3 (plot) | `python scripts/make_figure3.py` |
+| Figs. 4, 7, 8 (plots) | `python scripts/make_figures_main.py` |
+| Figs. 5, 6 (plots) | `python scripts/make_figures_supp.py` |
+
+The density-drift trace (Figs. 5 and 6), the $\rho_{\max}$ sweep (Table 5) and the
+hyperparameter sweeps (Fig. 7) are produced by instrumented runs of the same
+pipeline; their recorded outputs are in `outputs/` so the figures and tables can be
+regenerated without re-running training.
 
 `outputs/` already contains the result JSONs behind every number reported in the
 paper, so the tables and figures can be regenerated without re-running training.
