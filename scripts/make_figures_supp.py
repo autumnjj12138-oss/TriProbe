@@ -1,6 +1,6 @@
 import os
 os.makedirs("figures", exist_ok=True)
-"""Generate mask-density-drift diagnostic figures (Sec 4.1/4.2/4.3) as PDFs.
+"""Plot the mask-density-drift diagnostic figures.
 Okabe-Ito colorblind-safe categorical palette, fixed order, one axis per panel.
 """
 import json

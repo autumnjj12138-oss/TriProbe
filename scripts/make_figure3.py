@@ -1,12 +1,10 @@
 import os
 os.makedirs("figures", exist_ok=True)
 # -*- coding: utf-8 -*-
-"""Re-emit the baseline-ASR chart as a horizontal bar chart sized for one column.
+"""Plot the composite ASR of every defense as a horizontal bar chart.
 
-Ten defence names cannot be read on a vertical axis at column width without
-steep rotation. Turning the chart on its side puts the names on the y-axis where
-they read horizontally, and it lets the figure leave the full-width float queue,
-which is what was delaying Figs. 3, 5 and 6 by two pages.
+Horizontal bars keep the ten defense names readable, and a logarithmic axis
+is used because the values span two orders of magnitude (0.86% to 100%).
 """
 import os, json
 from statistics import mean
@@ -47,4 +45,4 @@ fig.tight_layout()
 for out in ['figures']:
     fig.savefig(f'{out}/fig_baseline_asr.pdf')
 plt.close(fig)
-print('fig_baseline_asr.pdf re-emitted as a single-column horizontal bar chart')
+print('wrote fig_baseline_asr.pdf')

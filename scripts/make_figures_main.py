@@ -1,6 +1,6 @@
 import os
 os.makedirs("figures", exist_ok=True)
-"""Generate table->figure conversions for the CN paper (real data, academic style)."""
+"""Plot the main result figures from the stored experiment outputs."""
 import os, json
 from statistics import mean
 import matplotlib
@@ -23,7 +23,7 @@ order = ['FedAvg','FedMedian','Krum','FLAME','RLR','DeepSight','SHIELD-FL','Lock
 labels = ['FedAvg','FedMedian','Krum','FLAME','RLR','DeepSight','SHIELD-FL','Lockdown','Flow-Aware','TriProbe']
 vals = [mean([d[k][s]['asr'] for s in S5])*100 for k in order]
 cols = [OK['sky']]*6 + [OK['orange']] + [OK['red']]*2 + [OK['green']]
-fig, ax = plt.subplots(figsize=(7, 2.7))   # flatter: keeps the float short
+fig, ax = plt.subplots(figsize=(7, 2.7)) 
 b = ax.bar(range(len(vals)), vals, color=cols, edgecolor='black', linewidth=0.6)
 # ASR spans two orders of magnitude (0.86% to 100%); a linear axis would render
 # the TriProbe bar sub-pixel, so the axis is logarithmic.
@@ -48,7 +48,7 @@ tri = [mean([ss['header_only_TriProbe'][s]['asr'] for s in S5])*100,
        mean([main[s]['TriProbe_comp']['asr'] for s in S5])*100]
 import numpy as np
 x = np.arange(len(types)); w = 0.38
-fig, ax = plt.subplots(figsize=(3.5, 2.9))  # single-column width
+fig, ax = plt.subplots(figsize=(3.5, 2.9))
 ax.bar(x-w/2, nodef, w, label='No defense', color=OK['sky'], edgecolor='black', linewidth=0.6)
 ax.bar(x+w/2, tri, w, label='TriProbe', color=OK['green'], edgecolor='black', linewidth=0.6)
 # No-defense and TriProbe differ by three orders of magnitude (77.33% vs 0.08%),

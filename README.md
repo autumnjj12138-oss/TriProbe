@@ -56,7 +56,8 @@ already there, so an interrupted sweep can simply be restarted.
 | Table 3, Fig. 3 (baseline comparison) | `python scripts/run_baselines.py` |
 | SHIELD-FL baseline row | `python scripts/run_shieldfl_baseline.py` |
 | Table 6 (mechanism ablation) | `python scripts/run_ablation.py` |
-| Figs. 3, 4, 8, 9 | `python scripts/make_figures_main.py` |
+| Fig. 3 (baseline comparison) | `python scripts/make_figure3.py` |
+| Figs. 4, 8, 9 | `python scripts/make_figures_main.py` |
 | Figs. 5, 6, 7 | `python scripts/make_figures_supp.py` |
 
 `outputs/` already contains the result JSONs behind every number reported in the
