@@ -2,7 +2,7 @@
 
 Reference implementation and reproduction artifact for the paper
 
-> **TriProbe: Defending Federated Intrusion Detection against Cross-Subspace Composite Backdoors**
+> **Triggered Probing and Density Control against Cross-Subspace Composite Backdoors in Federated Intrusion Detection**
 > Yifan Liu, Junjie Qiu, Wenlei Chai, Ziyi Wang — Hebei University
 
 TriProbe defends a federated intrusion detection system against a *cross-subspace
@@ -81,7 +81,7 @@ The rationale is documented in the function's docstring.
 
 ```bibtex
 @article{liu2026triprobe,
-  title   = {TriProbe: Defending Federated Intrusion Detection against Cross-Subspace Composite Backdoors},
+  title   = {Triggered Probing and Density Control against Cross-Subspace Composite Backdoors in Federated Intrusion Detection},
   author  = {Liu, Yifan and Qiu, Junjie and Chai, Wenlei and Wang, Ziyi},
   journal = {Knowledge-Based Systems},
   year    = {2026},
